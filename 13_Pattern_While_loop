@@ -1,0 +1,269 @@
+#include <iostream>
+using namespace std;
+
+
+
+	
+
+int main(){
+	
+//	pattern 1;
+
+/*
+****
+****
+****
+****
+*/ 
+//	
+//	int n;
+//	cin>>n;
+//	
+//	int i=1;
+//	while(i<=n){
+//		
+//		int j=1;
+//		while(j<=n){
+//			cout<<"*";
+//			j++;
+//		}
+//		cout<<endl;
+//		
+//		i++;
+//	}
+//	
+//	pattern 2
+/*
+1111
+2222
+3333
+4444
+*/ 
+
+/*
+int n;
+	cin>>n;
+	
+	int i=1;
+	while(i<=n){
+		int j=1;
+		while(j<=n){
+			cout<<i;
+			j++;
+		}
+		cout<<endl;
+		i++;
+	}
+	
+	*/
+	
+/*	pattern 3
+	
+	321
+	321
+	321
+	
+	int n;
+	cin>>n;
+	int i=1;
+	while(i<=n){
+		int j=1;
+		while(j<=n){
+			cout<<n-j+1;
+			j++;
+		}
+		cout<<endl;
+		i++;
+	}
+	*/
+	
+	/*	pattern 4
+	
+	123
+	123
+	123
+	
+	int n;
+	cin>>n;
+	int i=1;
+	while(i<=n){
+		int j=1;
+		while(j<=n){
+			cout<<j;
+			j++;
+		}
+		cout<<endl;
+		i++;
+	}
+	*/
+/*	pattern 5
+	*
+	**
+	***
+	****
+	int n;
+	cin>>n;
+	
+	int row=1;
+	while(row<=n){
+		int col=1;
+		while(col<=row){
+			cout<<"*";
+			col++;
+		}
+		cout<<endl;
+		row++;
+	}
+	*/
+	
+/*	pattern 6
+	123
+	456
+	789
+	int n;
+	cin>>n;
+	int row=1;
+	int count=0;
+	while(row<=n){
+		int col=1;
+		while(col<=n){
+			cout<<count+1 <<" ";
+			count++;
+			col++;
+		}
+		cout<<endl;
+		row++;
+	}
+	*/
+	
+/*	pattern 7
+	1
+	23
+	456
+	78910
+		int n;
+	cin>>n;
+	int row=1;
+	int count=1;
+	while(row<=n){
+		int col=1;
+		while(col<=row){
+			cout<<count <<" ";
+			count++;
+			col++;
+		}
+		cout<<endl;
+		row++;
+	}
+	*/
+	
+/*	pattern 8
+1 
+23
+345
+4567
+	
+	int n;
+	cin>>n;
+	int row=1;
+	while(row<=n){
+		int col=1;
+		int value=row;
+		while(col<=row){
+			cout<<value;
+			value++;
+			col++;
+		}
+		cout<<endl;
+		row++;
+	}
+	*/
+	/*
+	pattern 10
+	1
+	21
+	321
+	4321
+	int n;
+	cin>>n;
+	int row=1;
+	while(row<=n){
+		int col=1;
+		while(col<=row){
+			cout<<row-col+1;
+			col++;
+		}
+		cout<<endl;
+		row++;
+
+*/	
+/* pattern 11
+
+AAA
+BBB
+CCC
+
+int n;
+cin>>n;
+int row=1;
+while(row<=n){
+	int col=1;
+	char value='A'+row-1;
+	while(col<=n){
+		cout<<value;
+		col++;
+	}
+	cout<<endl;
+	row++;
+}
+*/
+
+
+/*pattern 12
+ABCD
+ABCD
+ABCD
+ABCD
+
+int n;
+
+cin>>n;
+int row=1;
+while(row<=n){
+	int col=1;
+	char value='A'+col-1;
+	while(col<=n){
+		cout<<value;
+		value++;
+		col++;
+	}
+	cout<<endl;
+	row++;
+}
+*/
+
+/*pattern 13 
+
+ABC
+DEF
+GHI
+
+int n;
+cin>>n;
+char start='A';
+int row=1;
+while(row<=n){
+	int col=1;
+	
+	while(col<=n){
+		cout<<start;
+		start++;
+		col++;
+	}
+	cout<<endl;
+	row++;
+
+	}
+*/
+return 0;
+}
