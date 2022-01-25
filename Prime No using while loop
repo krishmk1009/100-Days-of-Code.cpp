@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+
+//Print the prime numbers from 1-n without using for loop (use only while loop)
+
+int findPrime(int n){
+	
+	if(n==0 || n==1){
+		return false;
+	}
+	int i=2;
+	while(i<=n/2){
+		if(n%i==0){
+			return 0;
+		}
+		else{
+			i++;
+		}
+	}
+	return 1;
+}
+
+int main(){
+	
+int k;
+cin>>k;
+int j=0;	
+while(j<=k){
+	if(findPrime(j)){
+		cout<<j<<" ";
+	}
+	j++;
+}
+	return 0;
+}
