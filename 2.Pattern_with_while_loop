@@ -1,0 +1,381 @@
+/*pattern 14
+
+ABC
+BCD
+CDE
+//int n;
+//cin>>n;
+//
+//int i=1;
+//while(i<=n){
+//	int j=1;
+//	char ch= 'A'+i+j-2;
+//	
+//	while(j<=n){
+//		cout<<ch;
+//		ch++;
+//		j++;
+//	}
+//	cout<<endl;
+//	i++;
+//	
+//}
+*/
+
+
+/*pattern 15
+A
+BB
+CCC
+DDDD
+int n;
+cin>>n;
+int i=1;
+while(i<=n){
+	char ch='A' + i-1;
+	int j=1;
+	while(j<=i){
+		cout<<ch;
+		j++;
+	}
+cout<<endl;
+i++;
+}
+
+*/
+/*pattern 16
+A
+BC
+DEF
+//int n;
+//cin>>n;
+//int i=0;
+//char start='A';
+//while(i<=n){
+//	int j=1;
+//	
+//	while(j<=i){
+//		cout<<start;
+//		start++;
+//		j++;
+//	}
+//	cout<<endl;
+//	i++;
+//}
+*/
+
+/*pattern 17
+A
+BC
+CDE
+DEFG
+
+int n;
+cin>>n;
+int i=0;
+
+while(i<=n){
+	int j=1;
+	
+	while(j<=i){
+		char start='A'+i+j-2;
+		cout<<start;
+//		start++;
+		j++;
+	}
+	cout<<endl;
+	i++;
+}
+*/
+/*
+pattern 18
+D
+CD
+BCD
+ABCD
+int n;
+cin>>n;
+int i=0;
+
+while(i<=n){
+	int j=1;
+	char start='A'+n-i;
+	while(j<=i){
+		
+		cout<<start;
+		start++;
+		j++;
+	}
+	cout<<endl;
+	i++;
+}
+*/
+/*pattern 19
+ABC
+BCD
+CDE
+
+int n;
+cin>>n;
+int i=1;
+while(i<=n){
+	int j=1;
+	char ch='A'+i-1;
+	while(j<=n){
+		cout<<ch;
+		ch++;
+		j++;
+	}
+	cout<<endl;
+	i++;
+}
+*/
+/*
+pattern 20 
+   *
+  **
+ ***
+****
+int n;
+cin>>n;
+int i=1;
+while(i<=n){
+//	print space
+int space=n-i;
+while(space){
+	cout<<" ";
+	space--;
+}
+//2nd print star *
+int j=1;
+while(j<=i){
+	cout<<"*";
+	j++;
+}
+cout<<endl;
+i++;
+}
+*/
+
+
+/*
+pattern 21
+*
+**
+***
+****
+int n;
+cin>>n;
+int i=1;
+while(i<=n){
+int j=1;
+int star=(n-i+1);
+while(j<=star){
+	cout<<"*";
+	j++;
+
+}
+cout<<endl;
+i++;
+}
+
+
+*/
+/*
+pattern 22
+****
+ ***
+  **
+   *
+int n;
+cin>>n;
+int i=1;
+while(i<=n){
+	int space=i-1;
+	while(space){
+		cout<<" ";
+		space--;
+	}
+int j=1;
+int star=(n-i+1);
+while(j<=star){
+	cout<<"*";
+	j++;
+
+}
+cout<<endl;
+i++;
+}
+*/
+
+//pattern 23
+/*1111
+ 222
+  33
+   4
+int n;
+cin>>n;
+int i=1;
+while(i<=n){
+	int space=i-1;
+	while(space){
+		cout<<" ";
+		space--;
+	}
+int j=1;
+
+while(j<=i){
+	cout<<i;
+	j++;
+
+}
+cout<<endl;
+i++;
+}*/
+
+//pattern 24
+
+  /* 1
+  22
+ 333
+4444
+int n;
+cin>>n;
+int i=1;
+while(i<=n){
+	int space=n-i;
+	while(space){
+		cout<<" ";
+		space--;
+	}
+int j=1;
+
+while(j<=i){
+	cout<<i;
+	j++;
+
+}
+cout<<endl;
+i++;
+}
+*/
+
+//pattern 25
+/*
+1234
+ 234
+  34 
+   4
+there are some error
+
+int n;
+cin>>n;
+int i=1;
+while(i<=n){
+	int space=i-1;
+	while(space){
+		cout<<" ";
+		space--;
+	}
+int j=1;
+
+while(j<=n){
+	
+	cout<<value;
+	
+	
+	
+	
+	j++;
+
+}
+cout<<endl;
+i++;
+}
+*/
+
+//pattern 26
+  /*
+   1
+  32
+ 654
+78910
+
+int n;
+cin>>n;
+int i=1;
+int count=1;
+while(i<=n){
+	int space=n-i;
+	while(space){
+		cout<<" ";
+		space--;
+	}
+int j=1;
+
+
+while(j<=i){
+	cout<<count;
+	count++;
+	j++;
+
+}
+cout<<endl;
+i++;
+}
+
+*/
+
+/*pattern 27
+pyramid  
+int n;
+cin>>n;
+int i=1;
+while(i<=n){
+//	1st triangle
+int space=n-i;
+while(space){
+	cout<<" ";
+	space--;
+}
+
+//2nd triangle
+int j=1;
+while(j<=i){
+	cout<<j;
+	j++;
+}
+
+//3rd triangle
+int start = i-1;
+while(start){
+	cout<<start;
+	start--;
+}
+cout<<endl;
+i++;
+}
+
+*/
+
+int n;
+cin>>n;
+int i=1;
+while(i<=n){
+//	1st trianle
+	int no=n-i+1;
+	int value=1;
+	while(no){
+		cout<<value;
+		value++;
+		no--;
+	}
+	int j=1;
+	while(j<=i){
+		cout<<"*";
+		j++;
+	}
+	
+	cout<<endl;
+	i++;
+}
