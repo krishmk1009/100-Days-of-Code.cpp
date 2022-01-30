@@ -1,0 +1,164 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+void max_of_three(int a,int b,int c){
+	if(a>b && b>c){
+			cout<<a;
+		}
+		else if(b>a && a>c){
+			cout<<b;
+		}
+		else{
+			cout<<c;
+		}
+}
+
+int near_hundred(int a,int b){
+	if((100-a)>(100-b)){
+		return b ;
+	}
+	else{
+		return a ;
+	}
+}
+
+int largeInRange(int a, int b){
+	if(a<20 || a>30 || b <20 || b>30){
+		return 0;
+	}
+	else{
+		if(a>b){
+			return a;
+		}
+		else{
+			return b;
+		}
+	}
+	
+}
+
+int count_string(string a){
+	int count =0;
+	for(int i=1; i<= a.length();i++){
+		if(a[i] == 'z'){
+			count++;
+		}
+		
+	}
+	if(count>=2 && count <=4){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+
+int last_digit(int x,int y){
+	
+	if((x%10)==(y%10)){
+		return true;
+	}
+	
+	else{
+		return false;
+	}
+	
+}
+
+string test(string x,int n){
+	
+	/*
+	Write a C++ program to create a new string which is n (non-negative integer) copies of a given string. Go to the editor
+Sample Input:
+"JS", 2
+"JS", 3
+"JS", 1
+Sample Output:
+JSJS
+JSJSJS
+JS */
+
+	for(int i=1;i<n;i++){
+		cout<<x;
+	}
+	
+	return x;
+}
+
+int check_aa(string s){
+	/*
+	Write a C++ program to count the string "aa" in a given string and assume "aaa" contains two "aa"	int count =0; */
+	int count = 0;
+	for(int i=0;i<s.length()-1;i++){
+		if(s.substr(i,2)=="aa"){
+			count ++;
+		}
+		
+		
+	}
+	return count;
+}
+
+bool chk_apperance(string s){
+	/*. Write a C++ program to check if the first appearance of "a" in a given string is immediately followed by another "a". */
+	
+	for(int i=0;i<s.length()-1;i++){
+		if(s.substr(i,1) =="a"){
+			if(s.substr(i,2)=="aa"){
+			
+			return true; 
+			break;
+		}
+		break;
+		
+		}
+		
+		
+		
+	}
+	return false;
+}
+int main(){
+	
+//	int a,b,c;
+//	cin>>a>>b>>c;
+//	
+//	max_of_three(a,b,c);
+//int a,b;
+//cin>>a>>b;
+//cout<<near_hundred(a,b);
+
+//int a,b;
+//cin>>a>>b;
+//cout<<largeInRange(a,b);
+
+
+//string a;
+//cin>>a;
+//
+//cout<<count_string( a);
+
+//int a,b;
+//cin>>a>>b;
+//cout<<last_digit(a,b);
+
+//string a;
+//cin>>a;
+//int n;
+//cin>>n;
+//	
+//	cout<<test(a,n);
+
+
+//string a;
+//cin>>a;
+//cout<<check_aa(a);
+
+string a;
+cin>>a;
+cout<<chk_apperance(a);
+	
+	return 0;
+}
