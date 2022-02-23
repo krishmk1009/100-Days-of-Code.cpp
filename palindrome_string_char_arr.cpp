@@ -14,12 +14,21 @@ int getLen(char name[]){
 }
 
 
+char toLower(char c){
+	if(c>='a'&& c<='z'){
+		return c;
+	}
+	else{
+		char temp = c - 'A' + 'a';
+		return temp;
+	}
+}
 bool isPalindrome(char name[],char n){
 	int s = 0;
 	int e= n-1;
 	
 	while(s<e){
-		if(name[s] != name[e]){
+		if(toLower(name[s]) != toLower(name[e])){
 			return false;
 			
 		}
@@ -28,6 +37,7 @@ bool isPalindrome(char name[],char n){
 		}
 	}
 }
+		
 			
 int main(){
 	
