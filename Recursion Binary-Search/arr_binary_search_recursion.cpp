@@ -14,7 +14,7 @@ bool binarySearch(int *arr, int s, int e, int k){
     }
 
 
-    // recursion case
+    // case of recursion
 
     if(k>arr[mid]){
         return binarySearch(arr,mid+1,e,k);
