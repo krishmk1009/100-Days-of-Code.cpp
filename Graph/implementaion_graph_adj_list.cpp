@@ -9,7 +9,7 @@ class Graph {
         unordered_map<T,list<T>> adj;
     
         void createEdge(T u, T v , bool direction){
-            // direction = 0 for undirected
+            // direction = 0 for undirecte
             // direction =1 for undirected
             
             adj[u].push_back(v);
