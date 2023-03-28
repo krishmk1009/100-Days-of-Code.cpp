@@ -27,7 +27,7 @@ public:
         vector<int>temp;
         solve(root , temp);
 
-        sort(temp.begin() , temp.end());
+        
 
         return temp[k-1];
 
