@@ -18,7 +18,7 @@ public:
     {
         this->age = a;
     }
-};
+}
 
 class Batsman : public Player
 {
