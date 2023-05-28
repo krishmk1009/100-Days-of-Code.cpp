@@ -26,3 +26,6 @@ public:
         return ans;
     }
 }
+// !pip install git+https://github.com/andreinechaev/nvcc4jupyter.git 
+// %load_ext nvcc_plugin
+// nvcc code -o filename
