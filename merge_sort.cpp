@@ -12,7 +12,7 @@ void merge(int *arr, int start, int end)
     int *first = new int[len1];
     int *second = new int[len2];
 
-    // copy values
+  
     int mainArrayIndex = start;
     for (int i = 0; i < len1; i++)
     {
