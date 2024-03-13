@@ -5,7 +5,7 @@ Array.prototype.myReduce = function (cb, initialValue){
     
     for(let i =0;i<this.length; i++){
         
-        accu = accu ? sb(accu , this[i] , i , this):this[i]; 
+        accu = accu ? cb(accu , this[i] , i , this):this[i]; 
     }
     return accu;
 }
